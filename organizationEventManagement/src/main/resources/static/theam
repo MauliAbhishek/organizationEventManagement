@@ -1,0 +1,29 @@
+http://localhost:5152/api/v1/employees
+http://localhost:5152/api/v1/events/
+
+
+
+
+<!-- -------------Output ---------------------------- !>
+[{
+	"id": 3,
+	"firstName": "Tester",
+	"lastName": "QA",
+	"emailId": "test@mail.com",
+	"joinedAt": "2019-02-18T13:22:43.000+0000",
+	"events": [{
+		"id": 5,
+		"title": "Testing Event-1",
+		"description": "Test Event-1"
+	}, {
+		"id": 6,
+		"title": "Testing Event-2",
+		"description": "Test Event-2"
+	}]
+	
+----------------------------------------------------------
+
+
+// To Kill the Port
+netstat -ano | findstr :8080
+taskkill /PID 9704 /F
